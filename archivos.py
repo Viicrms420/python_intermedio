@@ -9,6 +9,8 @@ def read():
 def write():
     names = ["facundo", "Miguel", "Pepe", "Christian", "Víctor"]
     with open("archivos/names.txt", "w", encoding="utf-8") as f:
+    #para no sobreescribir
+    #with open("archivos/names.txt", "a", encoding="utf-8") as f:
         for name in names:
             f.write(name)
             f.write("\n")
