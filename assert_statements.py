@@ -1,23 +1,23 @@
 def divisors(num):
-    while True:
-        divisors = []
 
-        assert num > 0, "A Natural number must be entered"
-        for i in range(1, num + 1):
-            if num % i == 0:
+    divisors = []
+
+    assert num > 0, "A Natural number must be entered"
+    for i in range(1, num + 1):
+        if num % i == 0:
                 divisors.append(i)
-        return divisors
+    return divisors
     
 
 
 def run():
-    while True:
-        num = input("Type a number: ")
-        assert num.lstrip('-').isnumeric(), "A number must be entered"
-        num = int(num)
-        print(divisors(num))
-        print("Program ends")
-        break
+    
+    num = input("Type a number: ")
+    assert num.lstrip('-').isnumeric(), "A number must be entered"
+    num = int(num)
+    print(divisors(num))
+    print("Program ends")
+        
         
 
 if __name__ == '__main__':
